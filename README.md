@@ -13,32 +13,6 @@ O sistema permite o cadastro de produtos e compradores, bem como a emissão de n
 - Emissão de nota fiscal com cálculo do total
 - Teste manual e testes automatizados com MUnit
 
-## Estrutura do Projeto
-
-TRABALHO INTERDISCIPLINAR/
-├── .vscode/                     # Configurações do VSCode
-├── data/
-│   └── produtos.csv             # Arquivo de dados de exemplo (não utilizado no sistema atual)
-├── lib/
-│   ├── munit.c                  # Implementação da biblioteca de testes Munit
-│   ├── munit.h                  # Header da biblioteca Munit
-│   └── munit.o                  # Objeto compilado da biblioteca (gerado automaticamente)
-├── src/
-│   ├── output/                  # Pasta de saída dos testes
-│   ├── comprador.cpp / .hpp     # Módulo de cadastro e manipulação de compradores
-│   ├── nota_fiscal.cpp / .hpp   # Módulo de emissão de nota fiscal
-│   ├── produto.cpp / .hpp       # Módulo de cadastro e manipulação de produtos
-│   ├── testes_comprador.cpp     # Testes automatizados do módulo de compradores
-│   ├── testes_nota.cpp          # Testes automatizados do módulo de notas fiscais
-│   ├── testes_produto.cpp       # Testes automatizados do módulo de produtos
-│   └── main.cpp                 # Função principal com os menus do sistema
-├── programa.exe                 # Executável do sistema principal
-├── app.exe                      # (Possivelmente duplicado – verificar uso)
-├── testes.exe                   # Executável para execução conjunta dos testes
-├── testes_comprador.exe         # Testes isolados do módulo comprador
-├── testes_nota.exe              # Testes isolados do módulo nota fiscal
-├── README.md                    # Documentação e instruções do projeto
-
 ## Compilação e Execução
 
 Para compilar e executar o programa principal:
