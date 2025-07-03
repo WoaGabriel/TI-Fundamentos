@@ -17,21 +17,25 @@ O sistema permite o cadastro de produtos e compradores, bem como a emissão de n
 
 Para compilar e executar o programa principal:
 
-g++ main.cpp produto.cpp comprador.cpp nota_fiscal.cpp -o sistema
-./sistema
+g++ -std=c++11 src/main.cpp src/produto.cpp src/comprador.cpp src/nota_fiscal.cpp -o programa.exe
+.\programa.exe
+
 Testes Automatizados
 Os testes foram implementados utilizando a biblioteca MUnit.
 
 Para compilar e rodar os testes:
 
-gcc -o test_comprador test_comprador.c comprador.cpp -lstdc++
-./test_comprador
+g++ -std=c++11 src/testes_comprador.cpp lib/munit.o src/comprador.cpp -o testes_comprador.exe
+.\testes_comprador.exe
 
-gcc -o test_produto test_produto.c produto.cpp -lstdc++
-./test_produto
 
-gcc -o test_nota_fiscal test_nota_fiscal.c nota_fiscal.cpp comprador.cpp produto.cpp -lstdc++
-./test_nota_fiscal
+g++ -std=c++11 src/testes_produto.cpp lib/munit.o src/produto.cpp -o testes_produto.exe
+.\testes_produto.exe
+
+
+g++ -std=c++11 src/testes_nota.cpp lib/munit.o src/nota_fiscal.cpp src/produto.cpp src/comprador.cpp -o testes_nota.exe
+.\testes_nota.exe
+
 Certifique-se de ter a biblioteca MUnit disponível localmente para compilar os testes.
 
 Documentação
